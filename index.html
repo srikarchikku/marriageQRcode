@@ -24,7 +24,7 @@ text-align:center;
 
 .container{
 position:absolute;
-top:25%;
+top:23%;
 left:50%;
 transform:translate(-50%,-50%);
 width:100%;
@@ -51,7 +51,7 @@ font-size:52px;
 
 .section{
 font-family:'Playfair Display',serif;
-font-size:28px;
+font-size:33px;
 color:#8b4d17;
 margin-top:20px;
 }
@@ -60,7 +60,7 @@ margin-top:20px;
 
 .date{
 font-family:'Playfair Display',serif;
-font-size:22px;
+font-size:26px;
 margin-top:6px;
 }
 
@@ -73,18 +73,25 @@ font-weight:600;
 margin-top:8px;
 }
 
-/* Location link */
+/* Location button */
 
 .map{
-display:block;
-margin-top:6px;
+display:inline-block;
+margin-top:12px;
+padding:8px 18px;
 font-size:18px;
+font-family:'Playfair Display',serif;
 color:#7a3e12;
+border:2px solid #caa252;
+border-radius:20px;
+background:linear-gradient(#f9e7c2,#f1d29c);
 text-decoration:none;
+box-shadow:0 3px 8px rgba(0,0,0,0.2);
+transition:0.2s;
 }
 
 .map:hover{
-text-decoration:underline;
+transform:scale(1.05);
 }
 
 /* spacing between events */
@@ -107,6 +114,11 @@ font-size:22px;
 
 .venue{
 font-size:22px;
+}
+
+.map{
+font-size:16px;
+padding:7px 16px;
 }
 
 }
