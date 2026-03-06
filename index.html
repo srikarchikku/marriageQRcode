@@ -8,13 +8,9 @@
 
 <title>Srikar Weds Gayatri</title>
 
-<!-- Google Fonts -->
-
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
-
-/* Page */
 
 body{
 margin:0;
@@ -24,11 +20,11 @@ background:url("couple.png") center/cover no-repeat;
 position:relative;
 }
 
-/* Container positioned between garland and faces */
+/* Container */
 
 .container{
 position:absolute;
-top:28%;
+top:18%;
 left:50%;
 transform:translate(-50%, -50%);
 display:flex;
@@ -38,68 +34,95 @@ text-align:center;
 width:100%;
 }
 
-/* Title */
+/* Title with glow */
 
 .title{
 font-family:'Great Vibes',cursive;
-font-size:78px;
-color:#9c5a18;
-margin-bottom:50px;
+font-size:85px;
+color:#d4a437;
+margin-bottom:40px;
+animation:glow 3s ease-in-out infinite alternate;
+}
+
+/* Glow animation */
+
+@keyframes glow{
+
+from{
+text-shadow:
+0 0 5px #d4a437,
+0 0 10px #d4a437,
+0 0 15px #e7c873;
+}
+
+to{
+text-shadow:
+0 0 10px #ffd700,
+0 0 20px #ffd700,
+0 0 30px #fff1b0;
+}
+
 }
 
 /* Heart */
 
 .heart{
 color:#c92525;
-font-size:50px;
-vertical-align:middle;
+font-size:55px;
 }
 
-/* Buttons container */
+/* Cards */
 
-.links{
-display:flex;
-flex-direction:column;
-gap:36px;
-align-items:center;
+.card{
+background:rgba(255,255,255,0.85);
+padding:20px 30px;
+border-radius:18px;
+margin:10px;
+width:340px;
+box-shadow:0 6px 15px rgba(0,0,0,0.2);
 }
 
-/* Elegant buttons */
-
-.btn{
-width:320px;
-padding:20px;
-font-size:24px;
-border-radius:40px;
-border:2px solid #caa252;
-background:linear-gradient(#f9e7c2,#f1d29c);
-color:#5a3a15;
+.card-title{
+font-size:22px;
 font-weight:600;
-cursor:pointer;
-box-shadow:0 6px 15px rgba(0,0,0,0.25);
-transition:0.25s;
+margin-bottom:10px;
+color:#8b4d17;
 }
 
-.btn:hover{
-transform:scale(1.05);
+.details{
+font-size:18px;
+margin:6px 0;
 }
 
-/* Mobile adjustments */
+/* Map link */
+
+.map-link{
+display:inline-block;
+margin-top:8px;
+font-weight:600;
+color:#8b4d17;
+text-decoration:none;
+}
+
+.map-link:hover{
+text-decoration:underline;
+}
+
+/* Mobile */
 
 @media(max-width:768px){
 
-.container{
-top:40%;
-}
-
 .title{
-font-size:46px;
+font-size:50px;
 }
 
-.btn{
-font-size:18px;
-width:240px;
-padding:16px;
+.card{
+width:280px;
+padding:18px;
+}
+
+.details{
+font-size:16px;
 }
 
 }
@@ -116,15 +139,41 @@ padding:16px;
 Srikar <span class="heart">❤</span> Gayatri
 </div>
 
-<div class="links">
+<div class="card">
 
-<button class="btn"
-onclick="window.open('https://maps.app.goo.gl/5qVGxQGQGMuK3caN9')">
-Marriage Location 📍 </button>
+<div class="card-title">Marriage Details</div>
 
-<button class="btn"
-onclick="window.open('https://maps.app.goo.gl/ZPdXHjhM1WDK9GSx6')">
-Reception Location 📍 </button>
+<div class="details">
+Date: April 04, 2026
+</div>
+
+<div class="details">
+Location: Arya Vyshya Function Hall, Warangal
+</div>
+
+<a class="map-link"
+href="https://maps.app.goo.gl/5qVGxQGQGMuK3caN9"
+target="_blank">
+View Location 📍 </a>
+
+</div>
+
+<div class="card">
+
+<div class="card-title">Reception Details</div>
+
+<div class="details">
+Date: April 05, 2026
+</div>
+
+<div class="details">
+Location: Reddy Function Hall, Jagtial
+</div>
+
+<a class="map-link"
+href="https://maps.app.goo.gl/ZPdXHjhM1WDK9GSx6"
+target="_blank">
+View Location 📍 </a>
 
 </div>
 
