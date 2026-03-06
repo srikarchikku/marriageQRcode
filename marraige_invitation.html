@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,128 +12,101 @@
 
 body{
 margin:0;
-padding:0;
-font-family: 'Segoe UI', sans-serif;
-background:#f4efe6;
+font-family:'Segoe UI',sans-serif;
+height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-height:100vh;
-}
-
-.container{
-
-width:100%;
-max-width:900px;
 text-align:center;
-position:relative;
-
+background:url("background.png") center/cover no-repeat;
 }
 
-/* Background image */
+/* overlay to make text readable */
 
-.wedding-bg{
-
+.overlay{
+background:rgba(255,255,255,0.65);
+backdrop-filter:blur(2px);
 width:100%;
-border-radius:20px;
-filter:brightness(90%) saturate(90%);
-}
-
-/* Buttons */
-
-.buttons{
-
-position:absolute;
-top:42%;
-left:50%;
-transform:translate(-50%, -50%);
+height:100%;
 display:flex;
 flex-direction:column;
-gap:20px;
-
+align-items:center;
+justify-content:center;
 }
 
-.btn{
+/* title */
 
-padding:16px 35px;
-font-size:20px;
-border-radius:40px;
-border:none;
-cursor:pointer;
+.title{
+font-size:48px;
+color:#7a2c2c;
 font-weight:bold;
-background:linear-gradient(45deg,#d4af37,#f3e5ab);
-box-shadow:0 8px 18px rgba(0,0,0,0.2);
-transition:0.3s;
+margin-bottom:40px;
+text-shadow:1px 1px 3px rgba(0,0,0,0.2);
+}
 
+/* button container */
+
+.links{
+display:flex;
+flex-direction:column;
+gap:25px;
+}
+
+/* buttons */
+
+.btn{
+padding:18px 40px;
+font-size:20px;
+border:none;
+border-radius:40px;
+background:linear-gradient(45deg,#c89b3c,#f5e6a6);
+color:#4b2e2e;
+font-weight:bold;
+cursor:pointer;
+box-shadow:0 6px 15px rgba(0,0,0,0.2);
+transition:0.25s;
 }
 
 .btn:hover{
-
 transform:scale(1.05);
-
 }
-
-/* Cartoon couple at bottom */
-
-.couple{
-
-position:absolute;
-bottom:0;
-left:50%;
-transform:translateX(-50%);
-width:350px;
-
-}
-
-/* Mobile */
 
 @media(max-width:768px){
 
-.buttons{
-
-top:45%;
-
+.title{
+font-size:36px;
 }
 
 .btn{
-
 font-size:18px;
-
-}
-
-.couple{
-
-width:260px;
-
+padding:15px 30px;
 }
 
 }
 
 </style>
-</head>
 
+</head>
 
 <body>
 
-<div class="container">
+<div class="overlay">
 
-<img src="background.png" class="wedding-bg">
+<div class="title">
+💍 Srikar Weds Gayatri 💍
+</div>
 
-<div class="buttons">
+<div class="links">
 
 <button class="btn"
 onclick="window.open('https://maps.app.goo.gl/5qVGxQGQGMuK3caN9')">
-📍 Marriage Location
-</button>
+📍 Marriage Location </button>
 
 <button class="btn"
 onclick="window.open('https://maps.app.goo.gl/ZPdXHjhM1WDK9GSx6')">
-📍 Reception Location
-</button>
+📍 Reception Location </button>
 
 </div>
-
-<img src="couple.png" class="couple">
 
 </div>
 
