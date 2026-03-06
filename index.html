@@ -8,59 +8,73 @@
 
 <title>Srikar Weds Gayatri</title>
 
+<!-- Google Fonts -->
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
 <style>
 
 /* Page */
 
 body{
 margin:0;
-font-family:'Segoe UI',sans-serif;
+font-family:'Poppins',sans-serif;
 height:100vh;
-display:flex;
-justify-content:center;
-align-items:flex-start;
-text-align:center;
 background:url("couple.png") center/cover no-repeat;
+position:relative;
 }
 
-/* Container */
+/* Container positioned between garland and faces */
 
 .container{
-width:100%;
+position:absolute;
+top:38%;
+left:50%;
+transform:translate(-50%, -50%);
 display:flex;
 flex-direction:column;
 align-items:center;
-padding-top:120px;
+text-align:center;
+width:100%;
 }
 
 /* Title */
 
 .title{
-font-size:48px;
-color:#7a2c2c;
-font-weight:bold;
-margin-bottom:35px;
-text-shadow:1px 1px 4px rgba(0,0,0,0.25);
+font-family:'Great Vibes',cursive;
+font-size:64px;
+color:#9c5a18;
+margin-bottom:25px;
 }
 
-/* Button container */
+/* Heart */
+
+.heart{
+color:#c92525;
+font-size:40px;
+vertical-align:middle;
+}
+
+/* Buttons container */
 
 .links{
 display:flex;
 flex-direction:column;
-gap:20px;
+gap:22px;
+align-items:center;
 }
 
-/* Buttons */
+/* Elegant buttons */
 
 .btn{
-padding:16px 35px;
-font-size:18px;
-border:none;
+width:280px;
+padding:18px;
+font-size:20px;
 border-radius:40px;
-background:linear-gradient(45deg,#c89b3c,#f5e6a6);
-color:#4b2e2e;
-font-weight:bold;
+border:2px solid #caa252;
+background:linear-gradient(#f9e7c2,#f1d29c);
+color:#5a3a15;
+font-weight:600;
 cursor:pointer;
 box-shadow:0 6px 15px rgba(0,0,0,0.25);
 transition:0.25s;
@@ -70,21 +84,22 @@ transition:0.25s;
 transform:scale(1.05);
 }
 
-/* Mobile */
+/* Mobile adjustments */
 
 @media(max-width:768px){
 
 .container{
-padding-top:90px;
+top:40%;
 }
 
 .title{
-font-size:34px;
+font-size:46px;
 }
 
 .btn{
-font-size:16px;
-padding:14px 28px;
+font-size:18px;
+width:240px;
+padding:16px;
 }
 
 }
@@ -98,18 +113,18 @@ padding:14px 28px;
 <div class="container">
 
 <div class="title">
-💍 Srikar Weds Gayatri 💍
+Srikar <span class="heart">❤</span> Gayatri
 </div>
 
 <div class="links">
 
 <button class="btn"
 onclick="window.open('https://maps.app.goo.gl/5qVGxQGQGMuK3caN9')">
-📍 Marriage Location </button>
+Marriage Location 📍 </button>
 
 <button class="btn"
 onclick="window.open('https://maps.app.goo.gl/ZPdXHjhM1WDK9GSx6')">
-📍 Reception Location </button>
+Reception Location 📍 </button>
 
 </div>
 
